@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ONE GYM</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Proiectcss.css">
+	<script src="javascript.js"></script>
+	<style>
+.mystyle {
+        text-align: center;
+	text-transform: uppercase;
+	padding: 15px 0px;
+	font-weight: 600;
+	font-size: 20px;
+	color: orange;
+	font-family: 'Raleway', sans-serif;
+}
+.mystyle1 {
+        text-align: right;
+	text-transform: uppercase;
+	padding: 15px 0px;
+	font-weight: 300;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+.mystyle3 {width: 100%;
+	margin-button: 5px;
+	text-indent: 7.5px;
+	font-family: 'Raleway', sans-serif;
+}
+
+</style>
+	
+</head>
+<body onload="init()">
+
+ <!--TEXT COMENTARIU -->
+
+
+<div class='container'>
+	<header>
+		<img src="onegym1.png" alt="Nu am putut incarca poza">
+		<nav>
+			<ul>
+				<li><a href="Proiecthtml.html">ACASA</a></li>
+				<li><a href="despre.html" style="text-decoration: underline;">DESPRE</a></li>
+				<li><a href="galerie.html">GALERIE</a></li>
+				<li><a href="contact.html">CONTACT</a></li>	
+			</ul>
+		</nav>
+	</header>
+</div>
+
+
+<section>
+	<div class="film">
+		<div class='container'>
+			<video width="1000" height="300" poster="onegym2.png" controls>
+				<source src="exemplu.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<div class='articole'>
+		<div class='container'>
+			<h2>DE CE SA ALEGI ONEGYM?</h2>
+			<article>
+				<h2>PROGRAM FLEXIBIL</h2>
+				<h3>NE ADAPTĂM NOI la programul tău!</h3>
+				<p>Luni-Vineri: 6.00-23.00, Sâmbătă: 9.00-18.00, Duminică: 10.00-16.00.</p>
+			</article>
+			<article>
+				<h2>ECHIPAMENTE</h2>
+				<h3>GAMĂ VARIATĂ – ONEGYM FOR EVERYONE</h3>
+				<p>La ONEGYM vor fi disponibile cele mai moderne și eficiente aparate de fitness marca PANATTA și TECHNOGYM.</p>
+			</article>
+			<article>
+				<h2>DOTĂRI</h2>
+				<h3>STANDARDE EUROPENE</h3>
+				<p>Sistem ventilație performant, podea cu suspensii pentru protejarea articulațiilor și cabine de duș cu vestiar.</p>
+			</article>
+			<article>
+				<h2>ABONAMENTE ACCESIBILE</h2>
+				<h3>DE LA 100 LEI</h3>
+				<p>Intreba de ofertele speciale pentru studenți, seniori sau bugetari!</p>
+			</article>
+		</div>
+	</div>
+	
+	
+
+</section>
+
+
+<h2 id="ah">Apasa butonul pentru a simti vibe-ul nostru</h2>
+<button id="aj" onclick="myFunction2()">Try it</button>
+
+<div class="exercises">
+	<div class="container">
+		<div class="node-form">
+			<form action="http://localhost:3000/todos?title=" onsubmit="return getDataFromServer(this);" method="GET">
+				<label for="title">Cauta un exercitiu (de ex Stretching):</label><br>
+				<input type="text" id="title" name="userInfo" placeholder="Titlu">
+				<input type="submit" value="Cauta">
+			</form>
+		</div>
+
+		<div class="node-form">
+			<form action="http://localhost:3000/users?name=" onsubmit="return getDataFromServer(this);" method="GET">
+				<label for="userName">Cauta un abonat (de ex Luiza):</label><br>
+				<input type="text" id="userName" name="userInfo" placeholder="Name">
+				<input type="submit" value="Cauta">
+			</form>
+		</div>
+
+		<div>
+			<h1>Rezultate:</h1>
+			<p id="nodeResults"></p>
+			<div id="allResults"></div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<h2 id="aq">Data
+<p id= "al"></p>
+</h2>
+
+
+
+
+<footer>
+	<h1>COPYRIGHT &copy; Dumitriu Razvan Andrei </h1>
+	<h2 id="wordsCounter">Numar cuvinte:</h2>
+	<h2 id="timeSpent"></h2>
+</footer>
+
+<script>
+
+	
+document.getElementById("ah").style.fontFamily = "Raleway";
+document.getElementById("ah").style.fontSize = "xx-larger";
+document.getElementById("ah").style.textAlign = "center";
+
+document.getElementById("aj").className = 'mystyle3';
+
+var d = new Date();
+document.getElementById("al").innerHTML = d;
+document.getElementById("al").className = 'mystyle1';
+document.getElementById("aq").className = 'mystyle1';
+  
+</script>
+
+</body>
+</html>

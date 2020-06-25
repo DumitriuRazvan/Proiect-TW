@@ -1,0 +1,20 @@
+1. (done) Culoare valida. In pagina va exista un input de tip text si un buton cu textul "seteaza culoare background". La click pe buton, se va prelua culoarea din input si daca e valida se va asocia backgroundului, daca nu, se va da un alert cu mesajul "Culoare invalida". -done
+
+3. (done) Aparitie treptata titlu. Sa se afiseze titlul paginii printr-o animatie, in felul urmator. La fiecare 100 milisecunde se fac vizibile doua litere ale titlului: intai prima si ultima, apoi a doua si penultima, apoi a treia si antepenultima, continuand pana in mijloc. - done
+
+4. (done) Timp petrecut pe pagina. Folosind localStorage sa se afiseze pe fiecare pagina (de exemplu in footer) numarul de minute si secunde petrecute in total (pe parcursul tuturor vizitarilor) de un utilizator pe pagina curenta (se va afisa pe fiecare pagina a site-ului). Afisajul se va actualiza la fiecare secunda.. Realizati taskul folosind aceeasi functie pentru toate paginile. - done
+
+5. (done) Numar vizitari linkuri. La fiecare click pe un link(cu exceptia celor din meniu) din orice pagina a site-ului, daca nu exista deja dupa el o paranteza cu un numar, se va afisa (1), iar daca exista deja (nr), se va afisa (nr+1). Acest numar va arata de cate ori s-a vizitat acel link din pagina curenta (nu si din alte pagini). Daca mai apare inca o data in pagina, un link cu continut identic, trebuie sa se actualizeze toate instantele linkului. Numerele trebuie sa se pastreze si la refresh sau dupa inchiderea si redeschiderea paginii. Functioanlitatea trebuie exemplificata pe minim doua pagini fiecare cu minim 3 linkuri distincte si doua egale (pentru linkurile egale trebuie sa avem acelasi numar) - done
+
+
+6. (done) Expresii regulate. Folosirea a minim 5 expresii regulate diferite, mai complexe, pentru validarea datelor dintr-un formular. De exemplu: se verifica faptul ca un sir e format doar din litere si incepe cu litera mare, se verifica faptul ca un sir incepe cu cifrele 072 si in rest e format dor din 7 alte cifre, se verifica faptul ca un sir incepe cu "www." se termina cu com/ro/edu/gov etc si nu contine carcatere "/" etc
+
+7. (done) Alert propriu. Creati doua functii myalert_a si myalert_b (conform cu explicatiile de mai jos) care sa inlocuiasca metoda alert si sa permita personalizarea mesajelor de acest tip. Sugestie:  “fereastra” myalert este un element HTML cu position:fixed.
+Varianta I: “fereastra” myalert este creata ca un element nou in DOM  care este sters cand este dezactivata.
+Varianta II: “fereastra” myalert este prezenta tot timpul in DOM dar nu este vizibila decat la activare; specificul  ei (metoda de redare a mesajelor, metoda de dezactivare) poate fi definit ca un obiect JavaScript.
+
+
+8. (done) Intrebare in timp limita. Pentru o pagina cu mai mult text, presupunem ca avem la final o intrebare referitoare la continutul textului, un input de tip text si un buton. Din momentul in care utilizatorul se focuseaza pe input, daca trec mai mult  de 3 secunde si nu a facut inca click pe buton, se va dezactiva inputul si se va da un alert cu mesajul "Timpul a expirat!". Daca a facut click pe buton inainte de sa expire timpul, se va crea un paragraf sub intrebare  cu textul "Felicitari!", altfel un paragraf cu trextul "Ai gresit!", iar intrebarea dispare din pagina. - done
+
+9. (done) Numar cuvinte. Sa se afiseze la finalul fiecarei paginii din site, in footer, numarul de cuvinte (siruri demarcate de caractere nealfanumerice: spatiu, virgula, punct etc.) existente in body (consideram cuvintele ca fiind separate prin spatii. - done
+

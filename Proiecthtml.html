@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>ONE GYM</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Proiectcss.css">
+	<script src="javascript.js"></script>
+<style>
+.mystyle {
+        text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0px;
+	font-weight: 600;
+	font-size: 20px;
+	color: orange;
+	font-family: 'Raleway', sans-serif;
+}
+.mystyle1 {
+        text-align: right;
+	text-transform: uppercase;
+	padding: 15px 0px;
+	font-weight: 300;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.mystyle3 {
+	width: 15%;
+	margin-button: 5px;
+	text-indent: 7.5px;
+	font-family: 'Raleway', sans-serif;
+}
+.mystyle4 {
+	width: 100%;
+	margin-button: 5px;
+	text-indent: 7.5px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+</style>
+</head>
+<body onload="init()">
+
+ <!--TEXT COMENTARIU -->
+
+
+<div class='container'>
+	<header>
+		<img src="onegym1.png" alt="Nu am putut incarca poza">
+		<nav>
+			<ul>
+				<li><a href="Proiecthtml.html" style="text-decoration: underline;">ACASA</a></li>
+				<li><a href="despre.html">DESPRE</a></li>
+				<li><a href="galerie.html">GALERIE</a></li>
+				<li><a href="contact.html">CONTACT</a></li>	
+			</ul>
+		</nav>
+	</header>
+</div>
+
+
+<section>
+	<div class="film">
+		<div class='container'>
+			<video width="1000" height="300" poster="onegym2.png" controls>
+				<source src="exemplu.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<div class="sectiune_text">
+		<div class='container'>
+			<h2 id="aa">ONEGYM PENTRU TOATA LUMEA</h2>
+			<p id="ab">Descoperă cum poți transforma orice antrenament într-o experiență inedită la ONEGYM! Cu 
+abonamente flexibile, orar prelungit, o gamă variată de echipamente de cea mai bună calitate, dar și
+dotări de ultimă generație, ONEGYM va deveni locul tău preferat atunci când vei dori să faci mișcare, 
+indiferent de nivelul de pregătire la care te afli!<span id="dots">...</span><span id="more"> ÎNCEPE ANTRENAMENTUL ACUM!
+La ONEGYM te invităm să ne cunoaștem mai întâi!   Testează acum experiența ONEGYM și decide-te dacă vom merge împreună pe calea spre rezultate excelente!</span></p>
+<div style= "text-align: center;"><button onclick="myFunction1()" id="myBtn">Citeste mai mult</button></div>
+		</div>
+	</div>
+	<div class='articole'>
+		<div class='container'>
+			<article>
+				<div class="imgart"></div>
+				<h2>Aerobic</h2>
+				<p>Clasa de aerobic este aceea clasă de fitness desfăşurat ă pe ritmul muzicii, 
+combinând paşi simpli la o intensitate relativ înaltă, pe parcursul unei bucăţi mari de timp, 
+cu scopul de îmbunătăţi sau menţine abilitatea de a transporta sau de a folosi oxigenul din organism.</p>
+			</article>
+			<article>
+				<div class="imgart"></div>
+				<h2>ZUMBA</h2>
+				<p>Zumba este un program de fitness inspirat din dansurile latino. 
+Mișcările Zumba solicită toate grupele de mușchi, modelând și tonifiând corpul. 
+În același timp, acestea acționeză precum exercițiile cardio, solicitându-ți inima și îmbunătățindu-ți sistemul cardiovascular. </p>
+			</article>
+			<article>
+				<div class="imgart"></div>
+				<h2>body Pump</h2>
+				<p>Dezvoltă forța şi rezistența, iar în cadrul antrenamentelor în care se lucrează cu greutăți, 
+consumul caloric crește cu mult față de un antrenament obișnuit, 
+are un răspuns hormonal foarte bun mai ales în cazul femeilor, întărește mușchii de profunzime, 
+crește pulsul destul de mult astfel încât să se producă arderea grasimilor.</p>
+			</article>
+			<article>
+				<div class="imgart"></div>
+				<h2>PILATES</h2>
+				<p>Pilates este o formă unică de exerciții care oferă organismului o multitudine de beneficii:
+  remodelează forma corpului, subțiază talia, tonifiază musculatura și  îmbunătățește postura.</p>
+			</article>
+		</div>
+	</div>
+	<div class="tabel">
+		<div class="container">
+			<h3 id="ad">Antrenori</h3>
+			<h2 id="aw" style="font-family: 'Raleway';"></h2>
+			<h3 id="ac"></h3>
+			<button id="aj" onclick="myFunction()">Afla clasa acestuia</button>
+			<h3 id="af"></h3>
+			<table >
+				<tr>
+					<th>id</th>
+					<th>Nume</th>
+					<th>Clasa</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Ionut Paval</td>
+					<td>Body Pump</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Luiza Bulgaru</td>
+					<td>Yoga</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Valentin Graur</td>
+					<td>Indoor Cycling</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Eduard Bujor</td>
+					<td>CROSSBOX</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Claudiu Rosu</td>
+					<td>Personal Trainer</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Alex Vasiliu</td>
+					<td>Personal Trainer</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Mihaela Gheba</td>
+					<td>Aerobic</td>
+				</tr>
+				
+			</table>
+	
+		</div>	
+	</div>
+	<div class="contact">
+</section>
+<h2 style = "text-align: center; font-family: 'Raleway', sans-serif; text-transform: uppercase; padding: 10px 0px; font-weight: 600; font-size: 20px;  ">Numele antrenorilor disponibili este: </h2>
+<h2 id='az'></h2>
+
+
+<h2 style = "text-align: center; font-family: 'Raleway', sans-serif; text-transform: uppercase; padding: 15px 0px; font-weight: 600; font-size: 20px;  ">Antrenamentul propus  pentru aceasta saptamana este: </h2>
+<button id="ay" onclick="abdomene()">Abdomen 6 packs</button>
+
+
+<!-- Inceput exercitii -->
+<div class="exercises">
+
+	<!-- Intrebare in timp limita -->
+	<div class="container">
+		<h1 id="questionHeader" style="display: none;">Cine este antrenorul lunii??</h1>
+		<input onfocus="startQuestionTimer()" onblur="clearTimeout(window.timeout)" id="questionInput" type="text">
+		<button onclick="answerQuestion()">Raspunde</button>
+		<h1 id="questionMessage"></h1>
+		
+	</div>
+
+
+	<!-- Final Intrebare in timp limita -->
+
+
+	<!-- Numar vizitari link -->
+
+	<div class="container">
+		<h1>Numar vizitari link</h1>
+
+		<a href="https://www.microsoft.com" target="_blank">Microsoft</a>
+		<br>
+		<a href="https://www.facebook.com" target="_blank">Facebook</a>
+		<br>
+		<a href="https://www.facebook.com" target="_blank">Facebook</a>
+		<br>
+		<a href="https://www.reddit.com" target="_blank">Reddit</a>
+		<br>
+		<a href="https://www.messenger.com" target="_blank">Messenger</a>
+	</div>
+
+	<!-- Final Numar vizitari link -->
+</div>
+
+<!-- Final Inceput exercitii -->
+
+
+<h2 id="aq">Data
+<p id= "al"></p>
+</h2>
+
+<footer>
+	<h1>COPYRIGHT &copy; Dumitriu Razvan Andrei </h1>
+	<h2 id="wordsCounter">Numar cuvinte:</h2>
+	<h2 id="timeSpent"></h2>
+</footer>
+
+<script>
+
+	alert("Bine ati venit pe site-ul nostru!");
+	document.getElementById("aa").innerHTML = "ONE GYM FOR EVERYONE";
+
+	if (typeof(Storage) !== "undefined") {
+  
+	localStorage.setItem("lastname", "Antrenorul lunii este:");
+  document.getElementById("aw").innerHTML = localStorage.getItem("lastname");
+}
+	else {
+  
+	document.getElementById("aw").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+	
+var person = {
+	nume:"Ionut Paval",
+	clasa:"Body Pump"
+};
+document.getElementById("ac").innerHTML = person.nume;
+document.getElementById("ac").style.color = "orange";
+document.getElementById("ac").style.fontFamily = "Raleway";
+document.getElementById("ac").style.fontSize = "xx-larger";
+
+delete person.clasa;
+
+	var Antrenori= '{"employees":[' +
+'{"firstName":"Alex","lastName":"Vasiliu" },' +
+'{"firstName":"Claudiu","lastName":"Rosu" },' +
+'{"firstName":"Eduard","lastName":"Bujor" },' +
+'{"firstName":"Luiza","lastName":"Bulgaru" }]}';
+obj = JSON.parse(Antrenori);
+var i;
+var mesaj=" ";
+for(i=0;i<=3;i++){
+	mesaj = mesaj + obj.employees[i].firstName + " " + obj.employees[i].lastName +'<br>' +'<br>'; 
+}
+
+
+function myFunction() {
+  var btn = document.createElement("P");
+  btn.innerText = "Body Pump";
+  document.getElementById("af").appendChild(btn);
+  document.getElementById("af").style.color = "orange";
+  
+
+}
+
+document.getElementById("aj").className = 'mystyle3';
+document.getElementById("az").innerHTML = mesaj;
+document.getElementById("az").className = 'mystyle';
+
+
+document.getElementById("ay").className = 'mystyle4';
+
+	
+
+	var d = new Date();
+document.getElementById("al").innerHTML = d;
+document.getElementById("al").className = 'mystyle1';
+document.getElementById("aq").className = 'mystyle1';
+	
+
+
+</script>
+</body>
+</html>

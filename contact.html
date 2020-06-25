@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ONE GYM</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Proiectcss.css">
+	<script src="javascript.js"></script>
+<style>
+.mystyle1 {
+        text-align: right;
+	text-transform: uppercase;
+	padding: 15px 0px;
+	font-weight: 300;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#myProgress {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background-color: #ddd;
+}
+
+#myBar {
+  background-color: orange;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+}
+</style>
+	
+</head>
+<body onload="init()">
+
+ <!--TEXT COMENTARIU -->
+
+
+<div class='container'>
+	<header>
+		<img src="onegym1.png" alt="Nu am putut incarca poza">
+		<nav>
+			<ul>
+				<li><a href="Proiecthtml.html">ACASA</a></li>
+				<li><a href="despre.html" >DESPRE</a></li>
+				<li><a href="galerie.html">GALERIE</a></li>
+				<li><a href="contact.html" style="text-decoration: underline;">CONTACT</a></li>	
+			</ul>
+		</nav>
+	</header>
+</div>
+
+
+<section>
+	<div class="film">
+		<div class='container'>
+			<video width="1000" height="300" poster="onegym2.png" controls>
+				<source src="exemplu.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<div class="sectiune_text">
+		<div class='container'>
+			<h2 id="av" onmouseover="afiseaza()">CONTACTEAZA-NE</h2>
+			<p>Numar de contact: +40730611979</p>
+			<p>Adresa de email: onegym@gmail.com</p>
+		</div>
+	</div>
+	<div class="contact">
+		<div class='container'>
+			<h2>Formular de inscriere</h2>
+			<form>
+				<input type="text" name="nume" placeholder="Introdu nume">
+				<br>
+				<input type="text" name="prenume" placeholder="Introdu prenume">
+				<br>
+				<input type="text" name="adresa" placeholder="Introdu adresa">
+				<br>
+				<input class="r" type="radio" name="sex" value="Masculin"> <p>Masculin</p>
+				<br>
+				<input class="r" type="radio" name="sex" value="Feminin"> <p>Feminin</p>	
+				<br><br>
+				<textarea name="text"></textarea>
+				<br>
+				<button onclick="myFunction4()">Trimite</button>
+				<br>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- Exercitii -->
+<div class="exercises">
+
+	
+	<!-- Culoare valida -->
+	<div class="container">
+		<h1>Culoare valida</h1>
+		<input id="myColor" type="text" placeholder="Adauga culoare">
+		<button onclick="setBackgroundColor()">Seteaza culoare background</button>
+	</div>
+	<!-- Final culoare valida -->
+
+	<!-- Expresii regulate -->
+	<div class="container">
+		<h1>Devino asociatul salii noastre</h1>
+
+		<div>
+			<label for="firstRegex">Numele tau de familie este (un sir e format doar din litere si incepe cu litera mare)</label>
+			<br>
+			<input id="firstRegex" type="text">
+			<button onclick="isFirstValid()">Trimite</button>
+		</div>
+
+		<div>
+			<label for="secondRegex">Numarul tau de telefon este (se verifica faptul ca un sir incepe cu cifrele 072 si in rest e format dor din 7 alte cifre)</label>
+			<br>
+			<input id="secondRegex" type="text">
+			<button onclick="isSecondValid()">Trimite</button>
+		</div>
+
+		<div>
+			<label for="thirdRegex">Site-ul tau este (un sir incepe cu "www." se termina cu com/ro/edu/gov etc si nu contine carcatere "/")</label>
+			<br>
+			<input id="thirdRegex" type="text">
+			<button onclick="isThirdValid()">Trimite</button>
+		</div>
+
+		<div>
+			<label for="fourthRegex">Adresa ta de mail este (textul introdus este un email valid)</label>
+			<br>
+			<input id="fourthRegex" type="text">
+			<button onclick="isEmailValid()">Trimite</button>
+		</div>
+
+		<div>
+			<label for="fifthRegex">Introdu, parola cu care doresti sa accesezi documentul pe care o sa ti-l trimitem pentru a ne raspunde la mai multe informatii (prima litera este mare, a doua este o cifra,a treia este una dintre !@# si apoi urmeaza doar litere mari)</label>
+			<br>
+			<input id="fifthRegex" type="text">
+			<button onclick="isFifthValid()">Trimite</button>
+		</div>
+		
+
+	</div>
+	<!-- Final Expresii regulate -->
+
+	<!-- Alert propriu -->
+	<div class="container">
+
+		<h1>Cele mai vandute clase sunt:</h1>
+
+		<div class="alert-wrapper">
+			<button onclick="showAlert1()">Varianta I</button>
+			<button onclick="showAlert2()">Varianta II</button>
+		</div>
+
+	</div>
+
+	<!-- Vezi stil pentru aceasta fereastra sus in style -->
+	<div id="alert2" class="alert-2">
+		<p id="alertMsg">Aerobic</p>
+		<button id="closeAlert2">Inchide</button>
+	</div>
+
+	<!-- Final varianta II de alert -->
+
+</div>
+
+
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<br>
+<button onclick="move()">Primeste doza de energie</button>
+
+<div class="exercises">
+	<!-- Numar vizitari link -->
+	<div class="container">
+		<h1>Numar vizitari link</h1>
+
+		<a href="https://www.google.com" target="_blank">Google</a>
+		<br>
+		<a href="https://www.facebook.com" target="_blank">Facebook</a>
+		<br>
+		<a href="https://www.facebook.com" target="_blank">Facebook</a>
+		<br>
+		<a href="https://www.reddit.com" target="_blank">Reddit</a>
+		<br>
+		<a href="https://www.youtubecom" target="_blank">Youtube</a>
+	</div>
+
+	<!-- Final Numar vizitari link  -->
+</div>
+
+<h2 id="aq">Data
+<p id= "al"></p>
+</h2>
+
+
+<footer>
+	<h1>COPYRIGHT &copy; Dumitriu Razvan Andrei </h1>
+	<h2 id="wordsCounter">Numar cuvinte:</h2>
+	<h2 id="timeSpent"></h2>
+</footer>
+
+<script>
+
+	var d = new Date();
+document.getElementById("al").innerHTML = d;
+document.getElementById("al").className = 'mystyle1';
+document.getElementById("aq").className = 'mystyle1';
+
+
+
+</script>
+
+
+</body>
+</html>
